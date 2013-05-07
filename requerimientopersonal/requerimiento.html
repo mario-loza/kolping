@@ -1,0 +1,507 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>requeriminto personal</title>
+<style type="text/css">
+.crearrgla {
+	width: 150px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.txtnaranja {
+	font-size: 14px;
+	font-weight: bold;
+	color: #C60;
+}
+.txtnaranja {
+	font-size: 9px;
+	font-weight: bold;
+	color: #000;
+}
+TELLL {
+	font-size: 14px;
+	font-weight: bold;
+	color: #C30;
+}
+.txtkolping {
+}
+.txtkollll {
+	font-size: 12px;
+	font-weight: bold;
+	color: #C30;
+}
+</style>
+
+<script src="SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+
+<link href="SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body,td,th {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: #000;
+	font-weight: bold;
+}
+body {
+	background-color: #F93;
+}
+</style>
+</head>
+
+<body>
+<div idv"cuadro"align="center">
+  <form action="requerimiento.php"method="post"> 
+     <table width="891" border="1" align="center" cellpadding="0" cellspacing="0">
+       <tr>
+         <td width="247" rowspan="4" valign="top"><p><img src="kolpg.jpg" alt="" width="237" height="173" /></p></td>
+         <td width="302" align="center" valign="top"><p>               <br />
+            <strong>REGISTRO</strong></p></td>
+         <td width="210" valign="top"><p><strong>FPAK.PC.02-R2</strong></p></td>
+       </tr>
+       <tr>
+         <td width="302" rowspan="3" align="center" valign="top"><p><strong>REQUERIMIENTO DE DOTACION DEL PERSONAL</strong></p></td>
+         <td width="210" valign="top"><p><strong>PAGINA 1 DE 2</strong></p></td>
+       </tr>
+       <tr>
+         <td width="210" valign="top"><p><strong>REVISION 00</strong></p></td>
+       </tr>
+       <tr>
+         <td width="210" valign="top"><p><strong>No.</strong></p></td>
+       </tr>
+     </table>
+     <table width="886" align="center">
+       <tr>
+         <td width="269"><label for="1.DESIGNACION DEL CARGO"><strong>1.DESIGNACION DEL CARGO</strong></label></td>
+         <td width="605"><input  type="text"name="Nom_Cgo" size="50" maxlength="50" /></td>
+       </tr>
+       <tr>
+         <td>JEFE DIRECTO</td>
+         <td><input type="text" name="Jf_Dir" size="50" maxlength="50" /></td>
+       </tr>
+       <tr>
+         <td>JEFE DE AREA</td>
+         <td>
+<select name="Jf_Area" >
+	<option value="NULL">Seleccione un evaluador de</option>
+	<option value>Pablo M</option>
+	<option value>Carlos C</option>
+	<option value>Beatriz P</option>
+</select>
+</td>
+       </tr>
+       <tr>
+         <td><label for="OBJETIVO DEL CARGO">OBJETIVO DEL CARGO</label></td>
+         <td width="605"><label for="textfield4"></label>
+         <input  type="text"name="Obj_Cgo"  size="50" maxlength="50" /></td>
+       </tr>
+     </table>
+     <table width="886" align="center">
+       <tr>
+         <td width="878" height="27"><p>2.PERFIL DEL CARGO(REQUISITOS MINIMOS PARA EL CARGO)</p></td>
+       </tr>
+     </table>
+     <table width="880" align="center">
+       <tr>
+         <td width="356">DAD PREFERIBLE(RANGO PREFERIBLE):</td>
+         <td width="512"><input type="text"name="Ed_Pref" size="30" />
+           SEXO
+             <select name="Sex">
+             <option value="INDISTINTO">INDISTINTO</option>
+             <option value="PREFERIBLE MASCULINO">PREFERIBLE MASCULINO</option>
+             <option value="PREFERIBLE FEMENINO">PREFERIBLE FEMENINO</option>
+           </select>
+         </span></td>
+       </tr>
+     </table>
+     <table width="882" align="center">
+       <tr>
+         <td width="874">A  CONTINUACION MARQUE CON UNA(X) EN LOS RECUADROS DE LA IZQUIERDA Y DESARROLLE O  AMPLIE LA INFORMACION SOLICITADA EN LOS RECUADROS DE LA DERECHA </td>
+       </tr>
+     </table>
+     <table width="932" align="center">
+       <tr>
+         <td width="436" height="254"><table width="392" height="252" border="1" align="center">
+           <tr>
+             <td colspan="3" align="center"><strong>
+               NIVEL DE INSTRUCCION
+             </strong></td>
+           </tr>
+           <tr>
+             <td width="138" height="42"><strong>FORMACION</strong></td>
+             <td width="101" align="center">NECESARIO</td>
+             <td width="123" align="center">DESEABLE </td>
+           </tr>
+           <tr>
+             <td height="40">BACHILLER</td>
+             <td colspan="2" align="center" valign="middle">
+               <select name="Niv_Bachiller">
+                 <option value="NECESARIO">NECESARIO</option>
+                 <option value="DESEABLE">DESEABLE</option>
+              </select></td>
+            </tr>
+           <tr>
+             <td>TECNICO MEDIO</td>
+             <td colspan="2" align="center" valign="middle"><select name="Niv_Tec_Med">
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+           <tr>
+             <td>TECNICO SUPERIOR </td>
+             <td colspan="2" align="center" valign="middle"><select name="Niv_Tec_Sup" >
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+           <tr>
+             <td>PROFESIONAL</td>
+             <td colspan="2" align="center" valign="middle"><select name="Niv_Prof" >
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+           <tr>
+             <td height="26">POST-GRADO</td>
+             <td colspan="2" align="center" valign="middle"><select name="Niv_Postulante" id="Niv_Postulante" >
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+         </table></td>
+         <td width="484"><table width="459" height="231" border="1" align="center">
+           <tr>
+             <td width="449" height="34" colspan="3" align="center"><strong>ESPECIFIQUE LA FORMACION NECESARIA PARA EL CARGO</strong></td>
+           </tr>
+           <tr>
+             <td height="183" colspan="3" align="center" valign="middle"><p>
+               <textarea name="Niv_Esp" cols="50" rows="11"></textarea>
+             </p></td>
+           </tr>
+         </table></td>
+       </tr>
+     </table>
+     <table width="927" align="center">
+       <tr>
+         <td width="434" height="254"><table width="392" height="252" border="1" align="center">
+           <tr>
+             <td colspan="3" align="center"><strong>EXPERIENCIA DEL CARGO</strong></td>
+           </tr>
+           <tr>
+             <td width="129" height="42">TIEMPO DE EXPERIENCIA</td>
+             <td width="102" align="center">NECESARIO</td>
+             <td width="139" align="center">DESEABLE </td>
+           </tr>
+           <tr>
+             <td height="40">NO REQUIERE</td>
+             <td colspan="2" align="center" valign="middle"> <select name="E_No_Req">
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+           <tr>
+             <td>6 MESES - 1 AÑO</td>
+             <td colspan="2" align="center" valign="middle"><select name="E_6m_1a">
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+           <tr>
+             <td>1 AÑO- 2 AÑOS</td>
+             <td colspan="2" align="center" valign="middle"><select name="E_1a_2a">
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+           <tr>
+             <td>2 AÑOS-4 AÑOS</td>
+             <td colspan="2" align="center" valign="middle"><select name="E_2a_4a" >
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+         </table></td>
+         <td width="481"><table width="463" height="223" border="1" align="center">
+           <tr>
+             <td width="453" height="34" colspan="3" align="center"><strong>
+             </strong>ESPECIFIQUETIPO DE EXPERIENCIA NECESARIA PARA EJERCER EL CARGO APROPIADAMENTE</td>
+           </tr>
+           <tr align="center" valign="middle">
+             <td height="175" colspan="3"><p>
+               <textarea name="Exp_Esp" cols="50" rows="10"></textarea>
+             </p></td>
+           </tr>
+         </table></td>
+       </tr>
+     </table>
+     <table width="928" align="center">
+       <tr>
+         <td width="437" height="254"><table width="391" height="252" border="1" align="center">
+           <tr>
+             <td colspan="3" align="center"><strong>PAQUETES INFORMATICOS</strong></td>
+           </tr>
+           <tr>
+             <td width="138" height="42">TIEMPO DE EXPERIENCIA</td>
+             <td width="111" align="center">NECESARIO</td>
+             <td width="120" align="center">DESEABLE </td>
+           </tr>
+           <tr>
+             <td height="40">WORD</td>
+             <td colspan="2" align="center" valign="middle"><select name="Pi_Word">
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+           <tr>
+             <td>EXCEL</td>
+             <td colspan="2" align="center"><select name="Pi_Exc">
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+           <tr>
+             <td>POWER POINT</td>
+             <td colspan="2" align="center" valign="middle"><select name="Pi_Pw_Po">
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+           <tr>
+             <td>ACCESS</td>
+             <td colspan="2" align="center" valign="middle"><select name="Pi_Acc">
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+           <tr>
+             <td>OUTLOOK</td>
+             <td colspan="2" align="center" valign="middle"><select name="Pi_Out">
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+         </table></td>
+         <td width="479"><table width="463" height="227" border="1" align="center">
+           <tr>
+             <td width="453" height="34" colspan="3" align="center"><strong>
+               <label for="NIVEL DE INSTRUCCION7">OTROS SOFTWARES NECESARIOS</label></strong></td>
+           </tr>
+           <tr>
+             <td height="185" colspan="3" align="center" valign="middle"><p>
+               <textarea name="Ot_S1" cols="50" rows="10"></textarea>
+             </p></td>
+           </tr>
+         </table></td>
+       </tr>
+     </table>
+     <table width="928" align="center">
+       <tr>
+         <td width="437" height="254"><table width="392" height="249" border="1" align="center">
+           <tr>
+             <td colspan="3" align="center"><strong>IDIOMAS</strong></td>
+           </tr>
+           <tr>
+             <td width="128" height="42">IDIOMA</td>
+             <td width="103" align="center">NECESARIO</td>
+             <td width="139" align="center">DESEABLE </td>
+           </tr>
+           <tr>
+             <td height="40">INGLES</td>
+             <td colspan="2" align="center" valign="middle"><select name="Id_Ing">
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+           <tr>
+             <td height="27">ALEMAN</td>
+             <td colspan="2" align="center" valign="middle"><select name="Id_Al">
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+           <tr>
+             <td>AYMARA</td>
+             <td colspan="2" align="center" valign="middle"><select name="Id_Aym">
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+           <tr>
+             <td>QUECHUA</td>
+             <td colspan="2" align="center" valign="middle"><select name="Id_Que" >
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+         </table></td>
+         <td width="479"><table width="464" height="78" border="1" align="center">
+           <tr>
+             <td width="458" height="34" colspan="3" align="center"><strong>
+             SI ES NESESARIO EL USO DE OTROS IDIOMAS ENUNCIE ,O EXPRESE LA INDIFERENCIA</strong></td>
+           </tr>
+           <tr>
+             <td height="30" colspan="3" align="center" valign="middle"><p>
+               <textarea name="Otro_Id" cols="50" rows="10"></textarea>
+             </p></td>
+           </tr>
+         </table></td>
+       </tr>
+     </table>
+     <table width="927" align="center">
+       <tr>
+         <td width="435" height="254"><table width="391" height="249" border="1" align="center">
+           <tr>
+             <td colspan="3" align="center"><strong>CARACTERISTICAS DE LA PERSONA</strong></td>
+           </tr>
+           <tr>
+             <td width="172" height="42">CARACTERISTICAS</td>
+             <td width="101" align="center">NECESARIO</td>
+             <td width="96" align="center">DESEABLE </td>
+           </tr>
+           <tr>
+             <td height="40">DISPONIBILIDAD DE TIEMPO</td>
+             <td colspan="2" align="center" valign="middle"><select name="Disp_Tp">
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+           <tr>
+             <td height="27">BUENA PRESENCIA</td>
+             <td colspan="2" align="center" valign="middle"><select name="Bue_Pres" >
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+           <tr>
+             <td>ORDEN EN EL TRABAJO</td>
+             <td colspan="2" align="center" valign="middle"><select name="Ord_Trab" >
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+           <tr>
+             <td>PUNTUALIDAD</td>
+             <td colspan="2" align="center" valign="middle"><select name="Punt">
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+           <tr>
+             <td>RESPONSABILIDAD</td>
+             <td colspan="2" align="center" valign="middle"><select name="Resp">
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+           <tr>
+             <td>RESPETUOSO</td>
+             <td colspan="2" align="center" valign="middle"><select name="Respet"">
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+           <tr>
+             <td>DETALLISTA</td>
+             <td colspan="2" align="center" valign="middle"><select name="Det">
+               <option value="NECESARIO">NECESARIO</option>
+               <option value="DESEABLE">DESEABLE</option>
+             </select></td>
+            </tr>
+         </table></td>
+         <td width="480"><table width="461" height="314" border="1" align="center">
+           <tr>
+             <td width="451" height="34" colspan="3" align="center"><strong>
+               COMO SE CARACTERIZA EN EL AMBITO LABORAL</label></strong></td>
+           </tr>
+           <tr>
+             <td height="272" colspan="3" align="center" valign="middle"><p>
+               <textarea name="Ot_Req_Nec" cols="50" rows="13"></textarea>
+             </p></td>
+           </tr>
+         </table></td>
+       </tr>
+     </table>
+     <table width="876" align="center">
+       <tr>
+         <td width="281">EJERCERA SUPERVISION
+           <select name="Ejer_Sup" class="txtkollll">
+             <option value="SI">SI</option>
+             <option value="NO">NO</option>
+           </select>
+         </span></td>
+         <td width="583"><span class="txtkolping">SI LA RESPUESTA ES SI INDIQUE EL NUMERO DE PERSONA</span>
+         <input type="text"name="Resp_Si"  size="7" maxlength="10" /></td>
+       </tr>
+     </table>
+     <table width="878" align="center">
+       <tr>
+         <td width="863"><label for="Car_Pers_Prof">CONDICIONES DE TRABAJO </label>
+(DESCRIBA TRABAJO A LA QUE ESTARA EXPUESTOEL TRABAJADOR EJEM:ESTRES,RUIDO ,TEMPETARURAS BAJAS,ETC.) </td>
+       </tr>
+     </table>
+     <table width="877" align="center">
+       <tr>
+         <td width="808"><textarea name="Cond_Tra" id="Cond_Tra" cols="121" rows="5"></textarea></td>
+       </tr>
+     </table>
+     <table width="877" align="center">
+       <tr>
+         <td width="869" align="left">CARACTERISTICAS PERSONALES Y PROFESIONALES NECESARIAS:(DESCRIBA APTITUDES,HABILIDADES,DESTREZA,ETC.)</td>
+       </tr>
+     </table>
+     <table width="878" align="center">
+       <tr>
+         <td width="870"><textarea name="Car_Pers_Prof" id="Car_Pers_Prof" cols="121" rows="5"></textarea></td>
+       </tr>
+     </table>
+     <table width="871" height="327" align="center">
+       <tr>
+         <th width="854" height="41" align="left" scope="col">PRINCIPALES FUNCIONES:</th>
+       </tr>
+       <tr>
+         <th height="278" align="left" scope="col"><p>
+           <label for="textfield3"></label>
+           <ul>
+             <li>
+               <input  type="text"name="Prin_Fun1"size="90" maxlength="90" />
+             </li>
+             <li>
+               <input type="text" name="Prin_Fun2"size="90" maxlength="90" />
+             </li>
+             <li>
+               <input  type="text"name="Prin_Fun3"size="90" maxlength="90" />
+             </li>
+             <li>
+               <input  type="text"name="Prin_Fun4"  size="90" maxlength="90" />
+             </li>
+             <li>
+               <input  type="text"name="Prin_Fun5"  size="90" maxlength="90" />
+             </li>
+             <li>
+               <input  type="text"name="Prin_Fun6" size="90" maxlength="90" />
+             </li>
+             <li>
+               <input  type="text"name="Prin_Fun7" size="90" maxlength="90" />
+             </li>
+             <li>
+               <input type="text"name="Prin_Fun8"  size="90" maxlength="90" />
+             </li>
+             <li>
+               <input  type="text"name="Prin_Fun9" size="90" maxlength="90" />
+             </li>
+             <li>
+               <input type="text"name="Prin_Fun10"size="90" maxlength="90" />
+         </p></th>
+       </tr>
+     </table>
+     <p><br />
+     </p>
+     <p>&nbsp;</p>
+	<input type="submit" value="Enviar datos"/>
+  </form>
+</div>
+<script type="text/javascript">
+var spryselect28 = new Spry.Widget.ValidationSelect("spryselect28", {validateOn:["blur"]});
+</script>
+</body>
+</html>

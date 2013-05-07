@@ -1,0 +1,146 @@
+<?php
+include_once("../pdf.php");
+$titulo="Requerimiento de Personal";
+mysql_connect("localhost","root","");
+mysql_select_db("kolpin");
+$sql="SELECT * FROM requerimientopersonal WHERE CodRequerimientoPersonal=".$_GET['cod'];
+//echo $sql;
+$res=mysql_query($sql);
+$r=mysql_fetch_array($res);
+$pdf=new PPDF("P","mm","letter");
+$pdf->AddPage();
+$pdf->CuadroCabecera(60,"DESIGNACION DEL CARGO",10,$r[Nom_Cgo]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"JEFE DIRECTO",10,$r[Jf_Dir]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"JEFE DE AREA",10,$r[Jf_Area]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"OBJETIVO DEL CARGO",10,$r[Obj_Cgo]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"DAD PREFERIBLE",10,$r[Ed_Pref]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"SEXO ",10,$r[Sex]);
+$pdf->Ln();$pdf->Ln();
+
+$pdf->CuadroCabecera(60,"NIVEL DE INSTRUCCION ",10,"");
+$pdf->Ln();$pdf->Ln();
+$pdf->CuadroCabecera(60,"BACHILLER",10,$r[Niv_Bach]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"TECNICO MEDIO",10,$r[Niv_Tec_Med]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"TECNICO SUPERIOR",10,$r[Niv_Tec_Sup]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"PROFESIONAL",10,$r[Niv_Prof]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"POST-GRADO",10,$r[Niv_Postula]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"ESPECIFICACIÓN",10,$r[Niv_Esp]);
+$pdf->Ln();$pdf->Ln();
+
+$pdf->CuadroCabecera(60,"EXPERIENCIA DEL CARGO",10,"");
+$pdf->Ln();$pdf->Ln();
+$pdf->CuadroCabecera(60,"NO REQUIERE",10,$r[E_No_Req]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"6 MESES - 1 AÑO",10,$r[E_6m_1a]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"1 AÑO- 2 AÑOS",10,$r[E_1a_2a]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"2 AÑOS-4 AÑOS",10,$r[E_2a_4a]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"ESPECIFICACIÓN",10,$r[Exp_Esp]);
+$pdf->Ln();$pdf->Ln();
+
+$pdf->CuadroCabecera(60,"PAQUETES INFORMATICOS",10,"");
+$pdf->Ln();$pdf->Ln();
+$pdf->CuadroCabecera(60,"WORD",10,$r[Pi_Word]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"EXCEL",10,$r[Pi_Exc]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"POWER POINT",10,$r[Pi_Pw_Po]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"ACCESS",10,$r[Pi_Acc]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"OUTLOOK",10,$r[Pi_Out]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"ESPECIFICACIÓN",10,$r[Ot_S1]);
+$pdf->Ln();$pdf->Ln();
+
+$pdf->CuadroCabecera(60,"IDIOMAS",10,"");
+$pdf->Ln();$pdf->Ln();
+$pdf->CuadroCabecera(60,"INGLES",10,$r[Id_Ing]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"ALEMAN",10,$r[Id_Al]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"AYMARA",10,$r[Id_Aym]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"QUECHUA",10,$r[Id_Que]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"ESPECIFICACIÓN",10,$r[Otro_Id]);
+$pdf->Ln();$pdf->Ln();
+
+$pdf->CuadroCabecera(60,"CARACTERISTICAS DE LA PERSONA",10,"");
+$pdf->Ln();$pdf->Ln();
+$pdf->CuadroCabecera(60,"DISPONIBILIDAD DE TIEMPO",10,$r[Disp_Tp]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"BUENA PRESENCIA",10,$r[Bue_Pres]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"ORDEN EN EL TRABAJO",10,$r[Ord_Trab]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"PUNTUALIDAD",10,$r[Punt]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"RESPONSABILIDAD",10,$r[Resp]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"RESPETUOSO",10,$r[Respet]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"DETALLISTA",10,$r[Det]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"ESPECIFICACIÓN",10,$r[Ot_Req_Nec]);
+$pdf->Ln();$pdf->Ln();
+
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"EJERCERA SUPERVISION",10,$r[Ejer_Sup]);
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"SI LA RESPUESTA ES SI INDIQUE EL NUMERO DE PERSONA",10,"");
+$pdf->Ln();
+$pdf->CuadroCabecera(60,"",10,$r[Resp_Si]);
+
+$pdf->Ln();$pdf->Ln();
+$pdf->CuadroCabecera(60,"CONDICIONES DE TRABAJO ",10,$r[Cond_Tra]);
+
+$pdf->Ln();$pdf->Ln();
+$pdf->CuadroCabecera(60,"CARACTERISTICAS PERSONALES ",10,$r[Car_Pers_Prof]);
+
+$pdf->Ln();$pdf->Ln();
+$pdf->CuadroCabecera(60,"PRINCIPALES FUNCIONES",10,"");
+$pdf->Ln();$pdf->Ln();
+$pdf->CuadroCabecera(5,"-",10,$r[Prin_Fun1]);
+$pdf->Ln();
+$pdf->CuadroCabecera(5,"-",10,$r[Prin_Fun2]);
+$pdf->Ln();
+$pdf->CuadroCabecera(5,"-",10,$r[Prin_Fun3]);
+$pdf->Ln();
+$pdf->CuadroCabecera(5,"-",10,$r[Prin_Fun4]);
+$pdf->Ln();
+$pdf->CuadroCabecera(5,"-",10,$r[Prin_Fun5]);
+$pdf->Ln();
+$pdf->CuadroCabecera(5,"-",10,$r[Prin_Fun6]);
+$pdf->Ln();
+$pdf->CuadroCabecera(5,"-",10,$r[Prin_Fun7]);
+$pdf->Ln();
+$pdf->CuadroCabecera(5,"-",10,$r[Prin_Fun8]);
+$pdf->Ln();
+$pdf->CuadroCabecera(5,"-",10,$r[Prin_Fun9]);
+$pdf->Ln();
+$pdf->CuadroCabecera(5,"-",10,$r[Prin_Fun10]);
+$pdf->Ln();$pdf->Ln();
+
+$pdf->CuadroCabecera(5,"Comentario del Contador",10,"");
+$pdf->Ln();
+$pdf->MultiCell(180,5,$r['ComentarioContador'],0);
+
+$pdf->Ln();$pdf->Ln();
+$pdf->CuadroCabecera(5,"Comentario de RRHH",10,"");
+$pdf->Ln();
+$pdf->MultiCell(180,5,$r['ComentarioRRHH'],0);
+$pdf->Output();
+?>

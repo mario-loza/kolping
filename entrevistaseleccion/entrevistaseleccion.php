@@ -1,0 +1,281 @@
+<?php
+$ruta="../";
+include_once("../cabecerahtml.php");
+?>
+<div class="grid_12">
+<?php
+  $Fch=$_POST['Fecha'];
+  $Pret_Sal=$_POST['Pret_Sal'];
+  $Ed=$_POST['Ed'];
+  $Nombre=$_POST['Nom_Postula'];
+  $Cargo=$_POST['Cgo_Postula'];
+  $Carr_1=$_POST['Carr_1'];
+  $Carr_1_Lg=$_POST['Carr_1_Lg'];
+  $Carr_1_Tm=$_POST['Carr_1_Tm'];
+  $Carr_1_Tit=$_POST['Carr_1_Tit'];
+  $Carr_2 =$_POST['Carr_2'];
+  $Carr_2_Lg=$_POST['Carr_2_Lg'];
+  $Carr_2_Tm=$_POST['Carr_2_Tm'];
+  $Carr_2_Tit=$_POST['Carr_2_Tit'];
+  $Carr_3 =$_POST['Carr_3'];
+  $Carr_3_Lg=$_POST['Carr_3_Lg'];
+  $Carr_3_Tm=$_POST['Carr_3_Tm'];
+  $Carr_3_Tit=$_POST['Carr_3_Tit'];
+  $Id1=$_POST['Id1'];
+  $Id1_Len =$_POST['Id1_Lugar'];
+  $Id1_Tm=$_POST['Id1_Tm'];
+  $Id1_Tit=$_POST['Id1_Tit'];
+  $Id2=$_POST['Id2'];
+  $Id2_Lg=$_POST['Id2_Lg'];
+  $Id2_Tm=$_POST['Id2_Tm'];
+  $Id2_Tit=$_POST['Id2_Tit'];
+  $Id3=$_POST['Id3'];
+  $Id3_Lg=$_POST['Id3_Lg'];
+  $Id3_Tm=$_POST['Id3_Tm'];
+  $Id3_Tit=$_POST['Id3_Tit'];
+  $Inf1=$_POST['Inf1'];
+  $Inf1_Lg=$_POST['Inf1_Lg'];
+  $Inf1_Tm=$_POST['Inf1_Tm'];
+  $Inf1_Tit=$_POST['Inf1_Tit'];
+  $Inf2=$_POST['Inf2'];
+  $Inf2_Lg=$_POST['Inf2_Lg'];
+  $Inf2_Tm=$_POST['Inf2_Tm'];
+  $Inf2_Tit=$_POST['Inf2_Tit'];
+  $Inf3=$_POST['Inf3'];
+  $Inf3_Lg=$_POST['Inf3_Lg'];
+  $Inf3_Tm=$_POST['Inf3_Tm'];
+  $Inf3_Tit=$_POST['Inf3_Tit'];
+  $Cond=$_POST['Cond'];
+  $Lic_Cond=$_POST['Lic_Cond'];
+  $An_T_L_1=$_POST['An_T_L_1'];
+  $An_T_L_2=$_POST['An_T_L_2'];
+  $Ult_Tra=$_POST['Ult_Tra'];
+  $Ult_Cgo=$_POST['Ult_Cgo'];
+  $Ult_Nom_Jf=$_POST['Ult_Nom_Jf'];
+  $Ult_Cgo_Jf=$_POST['Ult_Cgo_Jf'];
+  $Ult_Jf_Tf=$_POST['Ult_Jf_Tf'];
+  $Ult_Mtv_Ret=$_POST['Ult_Mtv_Ret'];
+  $Ult_Ret_Fch=$_POST['Ult_Ret_Fch'];
+  $Pnul_Tra=$_POST['Pnul_Tra'];
+  $Pnul_Nom_Jf=$_POST['Pnul_Nom_Jf'];
+  $Pnul_Cgo=$_POST['Pnul_Cgo'];
+  $Pnul_Cgo_Jf=$_POST['Pnul_Cgo_Jf'];
+  $Pnul_Jf_Tf=$_POST['Pnul_Jf_Tf'];
+  $Pnul_Mtv_Ret=$_POST['Pnul_Mtv_Ret'];
+  $Pnul_Mtv_Ret_Fch=$_POST['Pnul_Mtv_Ret_Fch'];
+  $An_Ot_Cam_Tra=$_POST['An_Ot_Cam_Tra'];
+  $An_Fam=$_POST['An_Fam'];
+  $Hij=$_POST['Hij'];
+  $Eds=$_POST['Eds'];
+  $Prof_Cony=$_POST['Prof_Cony'];
+  $Def_Rel_Fam=$_POST['Def_Rel_Fam'];
+  $Porq_Kolp=$_POST['Porq_Kolp'];
+  $Def_Tra_Id=$_POST['Def_Tra_Id'];
+  $Def_Jf_Id=$_POST['Def_Jf_Id'];
+  $Def_Eq_Ideal=$_POST['Def_Eq_Ide'];
+  $Porq_Dej_Kol=$_POST['Porq_Dej_Ko'];
+  $Com_Adi=$_POST['Com_Adi'];
+   echo"$Fch";
+   echo"$Pret_Sal";
+   echo"$Ed";
+   echo"$Nombre";
+   echo"$Cargo";
+   echo"$Carr_1";
+   echo"$Carr_1_Lg";
+   echo"$Carr_1_Tm";
+   echo"$Carr_1_Tit";
+   echo"$Carr_2";
+   echo"$Carr_2_Lg";
+   echo"$Carr_2_Tm";
+   echo"$Carr_2_Tit";
+   echo"$Carr_3";
+   echo"$Carr_3_Lg";
+   echo"$Carr_3_Tm";
+   echo"$Carr_3_Tit";
+   echo"$Id1";
+   echo"$Id1_Len";
+   echo"$Id1_Tm";
+   echo"$Id1_Tit";
+   echo"$Id2";
+   echo"$Id2_Lg";
+   echo"$Id2_Tm";
+   echo"$Id2_Tit";
+   echo"$Id3";
+   echo"$Id3_Lg";
+   echo"$Id3_Tm";
+   echo"$Id3_Tit";
+   echo"$Inf1";
+   echo"$Inf1_Lg";
+   echo"$Inf1_Tm";
+   echo"$Inf1_Tit";
+   echo"$Inf2";
+   echo"$Inf2_Lg";
+   echo"$Inf2_Tm";
+   echo"$Inf2_Tit";
+   echo"$Inf3";
+   echo"$Inf3_Lg";
+   echo"$Inf3_Tm";
+   echo"$Inf3_Tit"; 
+   echo"$Cond";
+   echo"$Lic_Cond";
+   echo"$An_T_L_1";
+   echo"$An_T_L_2";
+   echo"$Ult_Tra";
+   echo"$Ult_Cgo";
+   echo"$Ult_Nom_Jf";
+   echo"$Ult_Cgo_Jf";
+   echo"$Ult_Jf_Tf";
+   echo"$Ult_Mtv_Ret";
+   echo"$Ult_Ret_Fch";
+   echo"$Pnul_Tra";
+   echo"$Pnul_Nom_Jf";
+   echo"$Pnul_Cgo";
+   echo"$Pnul_Cgo_Jf";
+   echo"$Pnul_Jf_Tf";
+   echo"$Pnul_Mtv_Ret";
+   echo"$Pnul_Mtv_Ret_Fch";
+   echo"$An_Ot_Cam_Tra";
+   echo"$An_Fam";
+   echo"$Hij";
+   echo"$Eds";
+   echo"$Prof_Cony";
+   echo"$Def_Rel_Fam";
+   echo"$Porq_Kolp";
+   echo"$Def_Tra_Id";
+   echo"$Def_Jf_Id";
+   echo"$Def_Eq_Ideal";
+   echo"$Porq_Dej_Kol";   
+   echo"$Com_Adi";
+		  
+    //establecer conexion con la base de datos
+  $conexion= mysql_connect("localhost","root","");
+  $db=mysql_select_db("kolpin",$conexion);
+  
+  $sql="SELECT * FROM  entrevistaseleccion WHERE Nom_Postulante = '$Nombre'";
+  $resultado= mysql_query($sql,$conexion);
+  $filas=mysql_affected_rows($conexion);
+
+  echo"<BR>nro filas $filas";
+  if( $filas == 0 )
+  {
+   echo "<BR>El nombre especificado no existe";
+   //insertar datos en la tabla
+   $sql="INSERT INTO entrevistaseleccion(Fch,Pret_Sal,Ed,Nom_Postulante,Cgo_Postulante,Carr_1,Carr_1_Lg,Carr_1_Tm,Carr_1_Tit,Carr_2,Carr_2_Lg,Carr_2_Tm,Carr_2_Tit,Carr_3,Carr_3_Lg,Carr_3_Tm,Carr_3_Tit,Id1,Id1_Lg,Id1_Tm,Id1_Tit,Id2,Id2_Lg,Id2_Tm,Id2_Tit,Id3,Id3_Lg,Id3_Tm,Id3_Tit,Inf1,Inf1_Lg,Inf1_Tm,Inf1_Tit,Inf2,Inf2_Lg,Inf2_Tm,Inf2_Tit,Inf3,Inf3_Lg,Inf3_Tm,Inf3_Tit,Cond,Lic_Cond,An_T_L_1,An_T_L_2,Ult_Tra,Ult_Cgo,Ult_Nom_Jf,Ult_Cgo_Jf,Ult_Jf_Tf,Ult_Mtv_Ret,Ult_Ret_Fch,Pnul_Tra,Pnul_Cgo,Pnul_Nom_Jf,Pnul_Cgo_Jf,Pnul_Jf_Tf,Pnul_Mtv_Ret,Pnul_Mtv_Ret_Fch,An_Ot_Cam_Tra,An_Fam,Hij,Eds,Prof_Cony,Def_Rel_Fam,Porq_Kolp,Def_Tra_Id,Def_Jf_Id,Def_Eq_Id,Porq_Dej_Kol,Com_Adi)
+   VALUES('$Fch','$Pret_Sal','$Ed','$Nombre','$Cargo','$Carr_1','$Carr_1_Lg','$Carr_1_Tm','$Carr_1_Tit','$Carr_2','$Carr_2_Lg','$Carr_2_Tm','$Carr_2_Tit','$Carr_3','$Carr_3_Lg','$Carr_3_Tm','$Carr_3_Tit','$Id1','$Id1_Len','$Id1_Tm','$Id1_Tit','$Id2','$Id2_Lg','$Id2_Tm','$Id2_Tit','$Id3','$Id3_Lg','$Id3_Tm','$Id3_Tit','$Inf1','$Inf1_Lg','$Inf1_Tm','$Inf1_Tit','$Inf2','$Inf2_Lg','$Inf2_Tm','$Inf2_Tit','$Inf3','$Inf3_Lg','$Inf3_Tm','$Inf3_Tit','$Cond','$Lic_Cond','$An_T_L_1','$An_T_L_2','$Ult_Tra','$Ult_Cgo','$Ult_Nom_Jf','$Ult_Cgo_Jf','$Ult_Jf_Tf','$Ult_Mtv_Ret','$Ult_Ret_Fch','$Pnul_Tra','$Pnul_Cgo','$Pnul_Nom_Jf','$Pnul_Cgo_Jf','$Pnul_Jf_Tf','$Pnul_Mtv_Ret','$Pnul_Mtv_Ret_Fch','$An_Ot_Cam_Tra','$An_Fam','$Hij','$Eds','$Prof_Cony','$Def_Rel_Fam','$Porq_Kolp','$Def_Tra_Id','$Def_Jf_Id','$Def_Eq_Ideal','$Porq_Dej_Kol','$Com_Adi')";	 	 	 	 	 	 		 	 	 	  	 	 	 	 	 	 
+
+   $resultado=mysql_query($sql);
+   echo"resultado:$resultado<BR>";
+   //mostrar datos en la tabla
+   $resultado=mysql_query ("SELECT * FROM entrevistaseleccion",$conexion);
+
+   echo"Postulantes";
+   echo"<table border='1'>";
+   while($fila = mysql_fetch_array($resultado) )
+   {
+    echo"<tr>";
+    echo"<td>$fila[0]</td>";
+    echo"<td>$fila[1]</td>";
+	echo"<td>$fila[2]</td>";
+	echo"<td>$fila[3]</td>";
+	echo"<td>$fila[4]</td>";
+	echo"<td>$fila[5]</td>";
+	echo"<td>$fila[6]</td>";
+	echo"<td>$fila[7]</td>";
+	echo"<td>$fila[8]</td>";
+    echo"<td>$fila[9]</td>";
+	echo"<td>$fila[10]</td>";
+	echo"<td>$fila[11]</td>";
+	echo"<td>$fila[12]</td>";
+	echo"<td>$fila[13]</td>";
+	echo"<td>$fila[14]</td>";
+	echo"<td>$fila[15]</td>";
+	echo"<td>$fila[16]</td>";
+	echo"<td>$fila[17]</td>";
+	echo"<td>$fila[18]</td>";
+	echo"<td>$fila[19]</td>";
+	echo"<td>$fila[20]</td>";
+	echo"<td>$fila[21]</td>";
+	echo"<td>$fila[22]</td>";
+	echo"<td>$fila[23]</td>";
+	echo"<td>$fila[24]</td>";
+	echo"<td>$fila[25]</td>";
+	echo"<td>$fila[26]</td>";
+	echo"<td>$fila[27]</td>";
+	echo"<td>$fila[28]</td>";
+	echo"<td>$fila[29]</td>";
+	echo"<td>$fila[30]</td>";
+	echo"<td>$fila[31]</td>";
+	echo"<td>$fila[32]</td>";
+	echo"<td>$fila[33]</td>";
+	echo"<td>$fila[34]</td>";
+	echo"<td>$fila[35]</td>";
+	echo"<td>$fila[36]</td>";
+	echo"<td>$fila[37]</td>";
+	echo"<td>$fila[38]</td>";
+	echo"<td>$fila[39]</td>";
+	echo"<td>$fila[40]</td>";
+	echo"<td>$fila[41]</td>";
+	echo"<td>$fila[42]</td>";
+	echo"<td>$fila[43]</td>";
+	echo"<td>$fila[44]</td>";
+	echo"<td>$fila[45]</td>";
+	echo"<td>$fila[46]</td>";
+	echo"<td>$fila[47]</td>";
+	echo"<td>$fila[48]</td>";
+	echo"<td>$fila[49]</td>";
+	echo"<td>$fila[50]</td>";
+	echo"<td>$fila[51]</td>";
+	echo"<td>$fila[52]</td>";
+	echo"<td>$fila[53]</td>";
+	echo"<td>$fila[54]</td>";
+	echo"<td>$fila[55]</td>";
+	echo"<td>$fila[56]</td>";
+	echo"<td>$fila[57]</td>";
+	echo"<td>$fila[58]</td>";
+	echo"<td>$fila[59]</td>";
+	echo"<td>$fila[60]</td>";
+	echo"<td>$fila[62]</td>";
+	echo"<td>$fila[63]</td>";
+    echo"<td>$fila[64]</td>";
+	echo"<td>$fila[65]</td>";
+	echo"<td>$fila[66]</td>";
+	echo"<td>$fila[67]</td>";
+	echo"<td>$fila[68]</td>";
+	echo"<td>$fila[69]</td>";
+	echo"<td>$fila[70]</td>";
+	echo"<td>$fila[71]</td>";
+	/*echo"<td>$fila[72]</td>";
+	echo"<td>$fila[73]</td>";
+	echo"<td>$fila[74]</td>";
+	echo"<td>$fila[75]</td>";
+	echo"<td>$fila[76]</td>";
+	echo"<td>$fila[77]</td>";
+	echo"<td>$fila[78]</td>";
+	echo"<td>$fila[79]</td>";
+	echo"<td>$fila[80]</td>";
+	echo"<td>$fila[81]</td>";
+	echo"<td>$fila[82]</td>";
+	echo"<td>$fila[83]</td>";
+	echo"<td>$fila[84]</td>";
+	echo"<td>$fila[85]</td>";
+	echo"<td>$fila[86]</td>";
+	echo"<td>$fila[87]</td>";
+	echo"<td>$fila[88]</td>";
+	echo"<td>$fila[89]</td>";
+	/*echo"<td>$fila[33]</td>";*/
+	echo"</tr>";
+   }
+    echo"</table>";
+  }
+  else
+  {
+   echo"<BR>El nombre ya existe en los contactos.No se grabaron los datos";
+  }
+mysql_close($conexion);
+
+
+?>
+</div>
+<?php
+include_once("../pie.php");
+?>

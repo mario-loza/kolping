@@ -1,0 +1,212 @@
+body{
+	background:#fbfbfb;	
+	background:#404040;
+	padding-bottom:10px;
+}
+div.plomo{
+	background:#CCCCCC;		
+}
+.cabecera img{
+	float:left;	
+}
+.cabecera h1{
+	float:left;	
+	text-align:center;
+}
+.cabecera{
+
+	border-bottom:#F60 5px solid;
+	margin-bottom:20px;
+}
+#contenedor{
+	background-color:#FFF;	
+	box-shadow:#666 0px 0px 2px;
+}
+fieldset{
+	margin:10px;
+	border:solid 1px #F60;
+	padding:10px;
+}
+legend{
+	border:solid 1px #F60;
+	padding:10px;
+	background-color:#F60;
+	color:#FFF;
+	font-weight:bold;
+	text-shadow:#333 1px 1px 1px;
+}
+input[type=number],input[type=text],input[type=password],input[type=date],select,option,textarea{
+	padding:10px;
+	margin:3px;
+	border:1px solid #CCC;
+}
+input[type=number]:focus,input[type=text]:focus,input[type=password]:focus,input[type=date]:focus,select:focus,option:focus,textarea:focus{
+	border:1px solid #39F;
+}
+input[type=submit],input[type=reset]{
+	padding:10px;	
+	margin:3px;
+}
+hr{
+	border:1px solid #F60;	
+}
+hr.plomo{
+	border:1px dotted #CCC;	
+	margin:0px;
+}
+.menu{
+	margin: 0px;
+	list-style:none;
+	display:block;
+}
+.menu li{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+display:block;
+	float:left;
+	margin-left:-1px;
+	margin-top:5px;
+}
+.menu li a{
+/*	display:inline-block;*/
+	margin:0px;
+	border:1px solid #F60;
+	border-top:5px solid #FFF;
+	border:1px solid #F60;
+	padding:2px;
+	text-decoration:none;
+	color:#000;
+	
+		/* Chrome 10+,Safari */
+background : -webkit-linear-gradient(top, rgb(255, 206, 72) 00%, rgb(255, 136, 0) 99%);
+
+/* Firefox 4+ */ 
+background : -moz-linear-gradient(top, rgb(255, 206, 72) 00%, rgb(255, 136, 0) 99%);
+
+/* Opera */
+background : -o-linear-gradient(top, rgb(255, 206, 72) 00%, rgb(255, 136, 0) 99%);
+
+/* IE 10+ */
+background : -ms-linear-gradient(top, rgb(255, 206, 72) 00%, rgb(255, 136, 0) 99%); 
+
+/* W3C */
+background : -linear-gradient(top, rgb(255, 206, 72) 00%, rgb(255, 136, 0) 99%);
+/*	font-weight:bold;*/
+/*	border-bottom:#000 1px solid;*/
+/*	box-shadow:#333 1px 1px 0px;*/
+padding-top:20px;
+padding-bottom:20px;
+color:#000;
+font-weight:bold;
+border-radius:5px;
+}
+.menu li a:hover{
+	/*border-top:5px solid #000;*/
+/*	border-top:5px solid #000;*/
+border:1px solid #000;
+	color:#000;
+	background-color:#FFF !important;
+	/* Chrome 10+,Safari */
+background : -webkit-linear-gradient(top, rgb(82, 82, 82) 00%, rgb(0, 0, 0) 101%, rgb(231, 102, 16) 101%);
+
+/* Firefox 4+ */ 
+background : -moz-linear-gradient(top, rgb(82, 82, 82) 00%, rgb(0, 0, 0) 101%, rgb(231, 102, 16) 101%);
+
+/* Opera */
+background : -o-linear-gradient(top, rgb(82, 82, 82) 00%, rgb(0, 0, 0) 101%, rgb(231, 102, 16) 101%);
+
+/* IE 10+ */
+background : -ms-linear-gradient(top, rgb(82, 82, 82) 00%, rgb(0, 0, 0) 101%, rgb(231, 102, 16) 101%); 
+
+/* W3C */
+background : -linear-gradient(top, rgb(82, 82, 82) 00%, rgb(0, 0, 0) 101%, rgb(231, 102, 16) 101%);
+color:#FFF;
+}
+fieldset a{
+	color:#F60;
+	text-decoration:none;
+}
+fieldset a:hover{
+	text-decoration:underline;	
+}
+ tbody, tfoot, thead, tr, th, td{
+	border:#FC9 1px solid;
+	padding:5px;
+	vertical-align:auto	 !important
+}
+tr:hover td{
+	 background-color:#F5F5F5
+}
+table.none tr td,table.none tr, table.none  tbody{
+	border:none ;	
+}
+#resultado{
+	border:solid 1px #F90;	
+}
+tr.cabecera td{
+	background-color:#F93;	
+}
+
+input.user{
+	background-color:#636363;
+	border-radius:10px;
+	color:white;
+	padding:15px;
+	font-size:15px;
+	border:#efb820 4px solid;
+}
+input.user:focus,input.password:focus{
+	border:#f8ab00 4px solid;
+}
+input.password{
+	background-color:#636363;
+	border-radius:10px;
+	color:white;
+	padding:15px;
+	font-size:15px;
+	border:#efb820 4px solid;
+}
+ fieldset.login{
+	/* Chrome 10+,Safari */
+background : -webkit-linear-gradient(top, rgb(255, 206, 72) 00%, rgb(255, 136, 0) 99%);
+
+/* Firefox 4+ */ 
+background : -moz-linear-gradient(top, rgb(255, 206, 72) 00%, rgb(255, 136, 0) 99%);
+
+/* Opera */
+background : -o-linear-gradient(top, rgb(255, 206, 72) 00%, rgb(255, 136, 0) 99%);
+
+/* IE 10+ */
+background : -ms-linear-gradient(top, rgb(255, 206, 72) 00%, rgb(255, 136, 0) 99%); 
+
+/* W3C */
+background : -linear-gradient(top, rgb(255, 206, 72) 00%, rgb(255, 136, 0) 99%);
+	
+}
+fieldset.login table tr:hover td{
+	background-color:transparent !important;	
+}
+input.botoni{
+	border-radius:5px;	
+	background-color:#f0f5ef;
+	color:#3c3b3b;
+	font-weight:bold;
+}
+input.botoni:active{
+/* Chrome 10+,Safari */
+background : -webkit-linear-gradient(top, rgb(251, 189, 108) 00%, rgb(231, 102, 16) 100%);
+
+/* Firefox 4+ */ 
+background : -moz-linear-gradient(top, rgb(251, 189, 108) 00%, rgb(231, 102, 16) 100%);
+
+/* Opera */
+background : -o-linear-gradient(top, rgb(251, 189, 108) 00%, rgb(231, 102, 16) 100%);
+
+/* IE 10+ */
+background : -ms-linear-gradient(top, rgb(251, 189, 108) 00%, rgb(231, 102, 16) 100%); 
+
+/* W3C */
+background : -linear-gradient(top, rgb(251, 189, 108) 00%, rgb(231, 102, 16) 100%);
+	
+}
